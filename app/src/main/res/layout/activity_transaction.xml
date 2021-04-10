@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    tools:context=".TransactionActivity">
+
+    <Button
+        android:id="@+id/generate_btn2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="계좌 발급받기"
+        android:background="@drawable/buttonround"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="계좌 변경하기"
+        android:background="@drawable/buttonround"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/generate_btn2"
+        app:layout_constraintLeft_toLeftOf="@id/generate_btn2"
+        />
+
+    <Button
+        android:id="@+id/transition_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="마일리지 송금하기"
+        android:background="@drawable/buttonround"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/modify_btn"
+        app:layout_constraintLeft_toLeftOf="@id/modify_btn"
+        />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="계좌 및 거래내역 조회"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonround"
+        app:layout_constraintTop_toBottomOf="@id/transition_btn"
+        app:layout_constraintLeft_toLeftOf="@id/generate_btn2"
+
+         />
+
+    <TextView
+        android:id="@+id/account_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Switch
+        android:id="@+id/connect_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="월렛 연결"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/generate_btn2"
+        app:layout_constraintRight_toRightOf="@id/generate_btn2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -69,7 +69,7 @@ dependencies {
     implementation 'com.google.protobuf:protobuf-java:3.9.1'
     implementation 'com.google.protobuf:protobuf-gradle-plugin:0.8.10'
     annotationProcessor "org.eclipse.sisu:org.eclipse.sisu.inject:0.0.0.M5"
-
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
